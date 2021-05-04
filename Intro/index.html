@@ -14,7 +14,7 @@
     <img src="tg-logo-768x135.png" alt="logo">
     <br><br>
 
-    <h1>Opdrachten</h1>
+    <h1 style="text-align:center">Opdrachten</h1>
 
     <h3>1. Wat is het verschil tussen het internet en het world wide web?</h3>
     <p>
@@ -63,21 +63,114 @@
         minimaal 5 attributen en maak voorbeelden waar je de attributen in toepast.</h3>
     <p>Attributen worden gespecificeert in de begin-tag. Een attribuut geeft extra informatie over een element.
     <ul>
-        <li>
-            &lt;p style="color:red;"&gt;Voorbeeld&lt;&sol;p&gt;Dit geeft: <b style="color:red;">Voorbeeld
-            </b>
+        <li><b>style:</b> Hiermee worden elementen gestyled. &lt;p style="color:red;"&gt;Voorbeeld&lt;&sol;p&gt;Dit
+            geeft: <b style="color:red;"> Voorbeeld</b></li>
+        <li><b>alt:</b> Dit wordt gebruikt als alternatieve tekst bij een afbeelding wanneer de afbeelding niet getoond
+            kan worden. <br> &lt;img src="t-logo-768x135.png"alt="logo".&gt; Wordt <img src="t-logo-768x135.png"
+                alt="logo"></li>
+        <li><b>class:</b> dit geeft de mogelijkheid om bepaalde eigenschappen aan een element te koppelen.
+            &lt;p class="achtergrond"&gt; Een stukje tekst.&lt;&sol;p&gt;. waarbij de class"achtergrond" gestyled kan
+            worden met CSS</li>
+        <li><b>href:</b> Wordt gebruikt om te verwijzen naar iets. &lt;a
+            href="https://www.buienrader.nl/"&gt;buienradar&lt;&sol;a&gt linkt naar <a
+                href="https://www.buienradar.nl">buienradar</a></li>
+        <li><b>source/ src:</b> Dit is de plaats van een afbeelding, video of audio. zie voorbeeld bij de alt attribute
         </li>
     </ul>
     </p>
 
+    <h3>6. Waarom is een goede HTML Structuur belangrijk? Is deze code een goede structuur?
+        Leg uit.</h3>
+    <p>Een goede structuur is belangrijk zodat bezoekers alle nodige informatie snel kunnen vinden. De code waarnaar
+        gelinkt wordt heeft geen goede structuur. Er missen titels, paragraven, lijsten waardoor het onduidelijk wordt.
+    </p>
 
+    <h3>7. Wat is het verschil tussen inline en block elementen?</h3>
+    <p>Een block-level element begint altijd op een nieuwe regel en neemt de volle breedte van het browservenster in.
+        Het strekt zich uit naar links en rechts zo ver als het kan. Een inline element start niet op een nieuwe regel
+        en beslaat slechts zo veel breedte als het nodig heeft om wat erin staat weer te geven.</p>
 
+    <h3>8. Wat betekent nesting? Codeer een voorbeeld met nesting erin.</h3>
+    <p>Bij nesting zit er één of meerdere elementen in een ander element. In onderstaand voorbeeld zitten de heading en
+        paragraph nested in de body. <br>
+        &lt;body&gt;<br>
+        &lt;h1&gt;Heading&lt;&sol;h1&gt;<br>
+        &lt;p&gt;Paragraph&lt;&sol;p&gt;<br>
+        &lt;&sol;body&gt;
+    </p>
 
+    <h3>9. Sinds de komst van HTML5 zijn er elementen die betekenissen hebben. Wat
+        wordt er bedoeld met HTML semantics? Waarom is het gebruik van
+        semantics belangrijk?</h3>
+    <p>Een semantisch element beschrijft duidelijk de betekenis ervan voor zowel de browser als de ontwikkelaar.
+    <ul>
+        <li>Makkelijker om mee te ontwikkelen.</li>
+        <li>Beter op mobiel.</li>
+        <li>Goed voor SEO.</li>
+    </ul>
+    </p>
 
+    <h3>10.Wat voor content zou je in de volgende elementen gebruiken?
+        Geef in je antwoord voor elk element een toelichting.</h3>
+    <ul>
+        <li><b>&lt;header</b>&gt;Hier komt de titel van de pagina</li>
+        <li><b>&lt;footer</b>&gt;Hier komt de voettekst van de pagina</li>
+        <li><b>&lt;main</b>&gt;hier komt de belangrijkste inhoud</li>
+        <li><b>&lt;nav</b>&gt;Links naar belangrijke secties</li>
+        <li><b>&lt;section</b>&gt;Dit definiërt een bepaalde sectie in een document</li>
+        <li><b>&lt;aside</b>&gt; hier kan wat extra informatie worden gezet wat relateerd aan de inhoud in main.</li>
+        <li><b>&lt;article</b>&gt;vertegenwoordigt een op zichzelf staande compositie in een document, pagina,
+            toepassing of site, die bedoeld is om onafhankelijk verspreid of herbruikbaar te zijn.</li>
+    </ul>
 
+    <h3>11. Onderzoek en leg uit waarom headers zowel belangrijk zijn voor zoekmachines als
+        voor de gebruikers.</h3>
+    <p>Door headers te gebruiken weten zoekmachines waar een pagina over gaat wat weer handig is voor gebruikers als ze
+        ergens naar op zoek zijn. en gebruikers kunnen aan de hand van de header zien waar een pagina over gaat.
+    </p>
 
+    <h3>12. Onderzoek hoe je een text-header aanmaakt</h3>
+    <p>Met header tags: <strong> &lt;h&gt;</strong></p>
+    <h1 style="text-align:center">Heading 1</h1>
+    <h2 style="text-align:center">Heading 2</h2>
+    <h3 style="text-align:center">Heading 3</h3>
+    <h4 style="text-align:center">Heading 4</h4>
+    <h5 style="text-align:center">Heading 5</h5>
+    <h6 style="text-align:center">Heading 6</h6>
 
+    <h3>13.Onderzoek wat een paragraaf tag is en hoe hij gebruikt wordt.
+        Geef hier een voorbeeld bij.</h3>
+    <p><strong>&lt;p&gt;</strong> is een paragraaf tag en hierin wordt de gewone tekst van document geplaatst.</p>
 
+    <h3>14.Onderzoek en leg het verschil tussen het stoppen van alle tekst in één
+        paragraaf tag, en het opsplitsen van de tekst in meerdere tags uit.</h3>
+    <p>een paragraaf start altijd op een nieuwe lijn en browsers voegen automatisch witte spacing toe aan het begin en
+        einde van een paragraaf. Hierbij zal het document duidelijker worden als er meerdere paragraven gebruikt worden.
+    </p>
+
+    <h3>15.Reproduceer het volgende resultaat door gebruik te maken van text-headers
+        en de paragraaf tags. <br>
+        16.Voeg een Horizontal rule toe en reproduceer het volgende resultaat. <br>
+        17.Voeg een link tag toe en reproduceer het volgende resultaat in de footer.</h3>
+
+    <h1>Mijn eerste website</h1>
+    <h2>Mijn eerste sub-kop</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid suscipit magni maiores aperiam illum quos qui
+        non quaerat sit autem nostrum repellat neque, temporibus cumque facilis veritatis, id veniam alias.
+    </p>
+    <h2>Mijn tweede sub-kop</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, hic voluptate quos error provident aliquid
+        aspernatur ratione, dolorum maxime reiciendis omnis dolore doloremque odio, praesentium corporis assumenda
+        perspiciatis fugiat rerum.</p>
+    <hr>
+    <h3>Footer</h3>
+    <footer>Deze website is gebouwd vanuit de <a
+            href="http://techgrounds.nl/static/media/Opleidingsfactsheet_Fullstack.f7ceb4da.pdf"
+            target="_parent">TechGrounds Academy</a>
+    </footer>
+
+    <h3>18. Onderzoek welke 4 attributen een link tag kan hebben, leg uit wat deze doen
+        en voeg deze als voorbeeld toe op je website.</h3>
 
 
 
